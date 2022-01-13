@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Madhurendra Nath Tiwari</title>
@@ -20,10 +22,11 @@
                     <i class="fa fa-bars"></i>
                 </a>
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Work</a>
-                <a href="#">Contact</a>
+                <a href="#myAbout">About</a>
+                <a href="#EduCation">Education</a>
+                <a href="#Skillss">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#cntct">Contact</a>
             </div>  
         </div>
     </header>
@@ -35,7 +38,7 @@
                     <h1>I'm <span class="text_color">Madhurendra</span></h1>
                     <h1><span class="Name">Web Developer.</span></h1>
                     <button class="btn">
-                        <a href="#" target="_blank" rel="noopener noreferrer">Download CV</a>
+                        <a href="Madhurendra's Resume (1).pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
                     </button>
                     <div class="links">
                         <a href=""><i class="uil uil-github"></i></a>
@@ -49,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="MyAbout">
+    <div class="MyAbout" id="myAbout">
         <div class="abut">
             <h1>About</h1>
         </div>
@@ -63,50 +66,231 @@
             </div>
         </div>
     </div>
-    <div class="educations">
-        <div class="edu">
-            <div>
-                <h1>Education</h1>
+    <div class="education" id="EduCation">
+        <div class="education_heading">
+            <h1>Education</h1>
+            <p>My education details</p>
+        </div>
+        <div class="btns">
+            <div class="ten">
+                <button class="btn1" id="btn1" onclick="ShowMe(this.id)">10<sup>th</sup></button>
             </div>
-            <div class="education">
-                <div class="tenth">
-                    <div class="edImg">
-                        <img src="perfil.png" alt="" srcset="">
-                    </div>
-                <p>Class - 10th</p>
-                <p>School - KLRSVM</p>
-                <p>Location - Sant Kabir Nagar , UP</p>
-                <p>Pincode - 272175</p>
-                <p>Percentage - 87.5%</p>
-                </div>
-                <div class="tweleveth">
-                    <div class="edImg">
-                        <img src="perfil.png" alt="" srcset="">
-                    </div>
-                    <div>
-                        <p>Class - 12th</p>
-                        <p>School - NSIC</p>
-                        <p>Location - Sant Kabir Nagar , UP</p>
-                        <p>Pincode - 272175</p>
-                        <p>Percentage - 88.8%</p>
-                    </div>
-                </div>
-                <div class="grad">
-                    <div class="edImg">
-                        <img src="perfil.png" alt="" srcset="">
-                    </div>
-                    <p>Course - B.Tech(IT)</p>
-                    <p>School - UCER(AKTU)</p>
-                    <p>Location - Naini , Prayagraj , UP</p>
-                    <p>Pincode - 211010</p>
-                    <p>Percentage - 65.6%</p>
-                </div>
-                
+            <div class="twelve">
+                <button class="btn2" id="btn2" onclick="ShowMe(this.id)">12<sup>th</sup></button>
+            </div>
+            <div class="grad">
+                <button class="btn3" id="btn3" onclick="ShowMe(this.id)">B.Tech</button>
+            </div>
+        </div>
+        <div class="blockShow">
+            <div class="tenShow" id="show1">
+                <h2>K L R Sarswati Vidya Mandir , Khalilabad , Sant Kabir Nagar</h2>
+                <h2>10 <sup>th</sup> (Science Stream)</h2>
+                <h2>2014 - 2016</h2>
+                <h2>87.5%</h2>
+            </div>
+            <div class="twelveShow" id="show2">
+                <h2>Narpat Singh Inter College , Ujrautikala , Sant Kabir Nagar</h2>
+                <h2>12 <sup>th</sup> (Science Stream)</h2>
+                <h2>2016 - 2018</h2>
+                <h2>88.8%</h2>
+            </div>
+            <div class="gradShow" id="show3">
+                <h2>United College Of Engineering And Research , Naini , Prayagraj</h2>
+                <h2>Bachelor of Technology (Information Technology)</h2>
+                <h2>2019 - 2023</h2>
+                <h2>65.5%</h2>
             </div>
         </div>
     </div>
+    <div class="skills" id="Skillss">
+        <div class="skill">
+            <h1>Skills</h1>
+        </div>
+        <div class="gridSkill">
+            <div class="html">
+                <h2>HTML</h2>
+                <p>Advanced</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="css">
+                <h2>CSS</h2>
+                <p>Intermediate</p>
+                <p>⭐⭐⭐⭐</p>
+            </div>
+            <div class="js">
+                <h2>JavaScript</h2>
+                <p>Intermediate</p>
+                <p>⭐⭐⭐⭐</p>
+            </div>
+            <div class="reactjs">
+                <h2>ReactJS</h2>
+                <p>Beginner</p>
+                <p>⭐⭐⭐</p>
+            </div>
+            <div class="nodejsandexpress">
+                <h2>NodeJS & ExpressJS</h2>
+                <p>Beginner</p>
+                <p>⭐⭐</p>
+            </div>
+            <div class="mongodb">
+                <h2>MongoDB</h2>
+                <p>Beginner</p>
+                <p>⭐⭐</p>
+            </div>
+            <div class="candcpp">
+                <h2>C/C++</h2>
+                <p>Intermediate</p>
+                <p>⭐⭐⭐⭐</p>
+
+            </div>
+            <div class="java">
+                <h2>JAVA</h2>
+                <p>Intermediate</p>
+                <p>⭐⭐⭐⭐</p>
+
+            </div>
+            <div class="python">
+                <h2>Python</h2>
+                <p>Beginner</p>
+                <p>⭐⭐</p>
+
+            </div>
+            <div class="dsa">
+                <h2>DSA</h2>
+                <p>Intermediate</p>
+                <p>⭐⭐⭐⭐</p>
+
+            </div>
+            <div class="cp">
+                <h2>GitHub</h2>
+                <p>Intermediate</p>
+                <p>⭐⭐⭐⭐</p>
+
+            </div>
+            <div class="UIUYX">
+                <h2>UI/Ux</h2>
+                <p>Beginner</p>
+                <p>⭐⭐⭐</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="prjct" id="project">
+        <h1>Project</h1>
+    </div>
+    <div class="slideshow-container">
+
+        <!-- Full-width slides/quotes -->
+        <div class="mySlides">
+          <img src="thibault-penin-AWOl7qqsffM-unsplash.jpg" alt="NetFlix Clone" srcset="">
+          <p>I have created a Netflix Clone Using MERN Stack.</p>
+          <a href="https://madhuredra.github.io">Source Code</a>
+        </div>
+      
+        <div class="mySlides">
+            <img src="true-agency-Q8otix2SVko-unsplash.jpg" alt="E-commerce Website" srcset="">
+            <p>I have created an E-Commerce Website Using MERN Stack</p>
+            <a href="https://madhuredra.github.io">Source Code</a>
+        </div>
+      
+        <div class="mySlides">
+            <img src="christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="Portfolio">
+            <p>I have create a Portfolio Website using DHTML</p>
+            <a href="https://madhuredra.github.io/New-">My PortFolio</a>
+        </div>
+      
+        <div class="mySlides">
+            <img src="download.png" alt="TicTacToe" srcset="">
+            <p>I have created a Tic Tac Toe Game Using DHTML</p>
+        </div>
+        <div class="mySlides">
+            <img src="kyo-azuma-x_TJKVU1FJA-unsplash.jpg" alt="School Website">
+            <p>I have created School WEbsite using DHTML</p>
+            <a href="https://madhuredra.github.io/KLRSVM">www.KLRSVM.com</a>
+        </div>
+        <div class="mySlides">
+            <div class="manyMore">
+
+            </div>
+            <p> And Many More Project .....</p>
+        </div>
+        <!-- Next/prev buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    
+      <div class="contactus" id="cntct">
+        <h2 style="text-align: center;">Get In Touch</h2>
+
+        <div class="container">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <br>
+            <label for="country">Email Id</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+            <br>
+            <label for="subject" >Submit</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <br>
+            <input  class="btn" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Legacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Careers</h3>
+                        <ul>
+                            <li><a href="#">Job openings</a></li>
+                            <li><a href="#">Employee success</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                        <p class="copyright">Company Name © 2022</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="lst">
+            <p>Designed & Developed By Madhurendra Nath Tiwari</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
